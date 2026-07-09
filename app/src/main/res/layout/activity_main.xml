@@ -10,14 +10,15 @@
 
     <TextView
         android:id="@+id/clockText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
         android:text="00:00:00"
-        android:textColor="@color/primary"
+        android:textColor="@color/white"
         android:textSize="@dimen/clock_text_size"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dateText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,12 +27,13 @@
         android:id="@+id/dateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/date_margin_top"
-        android:text="Monday, January 1"
+        android:paddingBottom="40dp"
+        android:text="Monday, January 1, 2026"
         android:textColor="@color/secondary"
         android:textSize="@dimen/date_text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clockText" />
+        app:layout_constraintTop_toBottomOf="@+id/clockText"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
