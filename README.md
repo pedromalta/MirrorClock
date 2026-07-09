@@ -24,14 +24,12 @@ To build your own MirrorClock, you'll need:
 - **Masking**: Use black electrical tape or cardstock around the edges of the tablet to ensure no light from the frame or cables shows through.
 - **Power**: Route a thin USB cable to a power source to keep the clock running 24/7.
 
-![Setup Image 1](hardware/20260709_113456.jpg)
-*Old 4.4.4 Android tablet.*
-
-![Setup Image 2](hardware/20260709_123356.jpg)
-*Initial tablet positioning behind the glass.*
-
-![Setup Image 3](hardware/20260709_143112.jpg)
-*The final effect: High-contrast text appearing through the mirror surface.*
+<p align="center">
+  <img src="hardware/20260709_123356.jpg" width="45%" />
+  <img src="hardware/20260709_143112.jpg" width="45%" />
+  <br>
+  <em>Hardware assembly: Positioning the tablet (left) and the final high-contrast mirror effect (right).</em>
+</p>
 
 ## Tech Stack
 - **Language**: Kotlin
