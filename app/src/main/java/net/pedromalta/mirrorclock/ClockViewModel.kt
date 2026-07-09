@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import kotlin.time.Duration.Companion.milliseconds
 
 class ClockViewModel : ViewModel() {
 
@@ -23,7 +24,7 @@ class ClockViewModel : ViewModel() {
                 val now = System.currentTimeMillis()
                 _currentTime.value = now
                 val delayTime = 1000 - (now % 1000)
-                delay(delayTime)
+                delay(delayTime.milliseconds)
             }
         }
     }
