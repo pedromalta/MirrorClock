@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Vibrant Material 3 Palette -->
+    <color name="primary">#00E5FF</color>
+    <color name="on_primary">#000000</color>
+    <color name="primary_container">#004E59</color>
+    <color name="on_primary_container">#A7EDFF</color>
+
+    <color name="secondary">#FFAB00</color>
+    <color name="on_secondary">#000000</color>
+    <color name="secondary_container">#593D00</color>
+    <color name="on_secondary_container">#FFDF9E</color>
+
+    <color name="tertiary">#FF4081</color>
+    <color name="on_tertiary">#FFFFFF</color>
+
+    <color name="background">#000000</color>
+    <color name="on_background">#E1E3E3</color>
+
+    <color name="surface">#191C1C</color>
+    <color name="on_surface">#E1E3E3</color>
+
+    <color name="surface_variant">#3F484B</color>
+    <color name="on_surface_variant">#BFC8CB</color>
+
+    <color name="outline">#899295</color>
+
+    <!-- Legacy colors for compatibility if needed -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
