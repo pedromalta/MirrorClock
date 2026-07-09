@@ -55,9 +55,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun observeViewModel() {
+        val date = java.util.Date()
         viewModel.currentTime.observe(this) { timeMillis ->
-            binding.clockText.text = timeFormat.format(timeMillis)
-            binding.dateText.text = dateFormat.format(timeMillis)
+            date.time = timeMillis
+            binding.clockText.text = timeFormat.format(date)
+            binding.dateText.text = dateFormat.format(date)
         }
     }
 }
