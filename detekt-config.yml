@@ -61,7 +61,7 @@ naming:
   ConstructorParameterNaming:
     active: true
   FunctionNaming:
-    active: true
+    active: false
   VariableNaming:
     active: true
 

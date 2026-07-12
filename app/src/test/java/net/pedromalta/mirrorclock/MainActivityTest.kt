@@ -14,7 +14,7 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
     @Test
-    fun activityLaunchesSuccessfully() {
+    fun `given MainActivity when launched then activity is created`() {
         // Given an ActivityScenario for MainActivity
         val scenario = ActivityScenario.launch(MainActivity::class.java)
 
@@ -25,7 +25,7 @@ class MainActivityTest {
     }
 
     @Test
-    fun activityHasValidContentView() {
+    fun `given MainActivity when launched then has valid content view`() {
         // Launch the activity
         val scenario = ActivityScenario.launch(MainActivity::class.java)
 
@@ -36,7 +36,7 @@ class MainActivityTest {
     }
 
     @Test
-    fun activityHandlesConfigurationChange() {
+    fun `given MainActivity when configuration changes then survives without crash`() {
         // Given a launched activity
         val scenario = ActivityScenario.launch(MainActivity::class.java)
 
@@ -48,7 +48,7 @@ class MainActivityTest {
     }
 
     @Test
-    fun activityRestartsClockAfterResume() {
+    fun `given MainActivity when resumes then restarts clock`() {
         // Given a launched activity
         val scenario = ActivityScenario.launch<MainActivity>(android.content.Intent())
 

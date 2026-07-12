@@ -66,7 +66,7 @@ app/src/main/java/net/pedromalta/mirrorclock/
   - `LongParameterList`: > 6 params
   - `TooManyFunctions`: > 11
   - `ReturnCount`: max 2 (excluding `equals`)
-- **Naming**: `FunctionName` allows `test*` and `.` patterns
+- **Naming**: `FunctionName` is disabled (test functions use backtick BDD notation: `` `given X when Y then Z` ``)
 
 ## Android Manifest
 

@@ -26,7 +26,7 @@ class ClockViewModelTest {
     }
 
     @Test
-    fun viewModelInitializesWithCurrentTime() {
+    fun `given ClockViewModel when initialized then currentTime is set`() {
         // Given a new ClockViewModel
         viewModel = ClockViewModel()
 
@@ -42,7 +42,7 @@ class ClockViewModelTest {
     }
 
     @Test
-    fun viewModelUpdatesTimeEverySecond() {
+    fun `given ClockViewModel when observed then time updates every second`() {
         // Given a ClockViewModel
         viewModel = ClockViewModel()
 
@@ -63,7 +63,7 @@ class ClockViewModelTest {
     }
 
     @Test
-    fun viewModelCurrentTimeIsNotNull() {
+    fun `given ClockViewModel when observed then currentTime is not null`() {
         // Given a ClockViewModel
         viewModel = ClockViewModel()
 
@@ -78,7 +78,7 @@ class ClockViewModelTest {
     }
 
     @Test
-    fun viewModelTimeValueIsValidTimestamp() {
+    fun `given ClockViewModel when observed then time value is valid timestamp`() {
         // Given a ClockViewModel
         viewModel = ClockViewModel()
 
