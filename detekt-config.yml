@@ -61,7 +61,12 @@ naming:
   ConstructorParameterNaming:
     active: true
   FunctionNaming:
-    active: false
+    active: true
+    excludes:
+      - '**/test/**'
+      - '**/androidTest/**'
+      - '**/commonTest/**'
+    functionPattern: '[a-z][a-zA-Z0-9]*'
   VariableNaming:
     active: true
 
