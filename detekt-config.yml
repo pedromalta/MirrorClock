@@ -1,0 +1,93 @@
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+  weights:
+    LongParameterList: 1
+    LongMethod: 2
+
+config:
+  validation: true
+  warningsAsErrors: true
+  excludes: ''
+
+processors:
+  active: true
+  exclude:
+    - 'DetektProjectListener'
+
+console-reports:
+  active: true
+  exclude:
+    - 'DetektModelReport'
+    - 'PrintableReport'
+
+output-reports:
+  active: true
+  exclude:
+    - 'TxtOutputReport'
+    - 'XmlOutputReport'
+    - 'HtmlOutputReport'
+
+complexity:
+  active: true
+  LongMethod:
+    active: true
+    threshold: 60
+  LongParameterList:
+    active: true
+    functionThreshold: 6
+    constructorThreshold: 6
+  TooManyFunctions:
+    active: true
+    ignoreOverridden: true
+
+coroutines:
+  active: true
+
+empty-blocks:
+  active: true
+
+exceptions:
+  active: true
+  SwallowedException:
+    active: true
+  ThrowingExceptionsWithoutMessageOrCause:
+    active: true
+
+naming:
+  active: true
+  ClassNaming:
+    active: true
+  ConstructorParameterNaming:
+    active: true
+  FunctionNaming:
+    active: true
+  VariableNaming:
+    active: true
+
+potential-bugs:
+  active: true
+
+style:
+  active: true
+  DataClassContainsFunctions:
+    active: true
+  EqualsNullCall:
+    active: true
+  ForbiddenComment:
+    active: true
+  MaxLineLength:
+    active: true
+    maxLineLength: 120
+    excludePackageStatements: true
+    excludeImportStatements: true
+    excludeCommentStatements: true
+  ReturnCount:
+    active: true
+    max: 2
+    excludedFunctions:
+      - "equals"
+  UnusedPrivateMember:
+    active: true
+  WildcardImport:
+    active: true
